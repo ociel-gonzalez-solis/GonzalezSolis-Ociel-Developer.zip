@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "36e95697-810c-4495-9ea2-3e69ee797211",
+		"name": "Pets Store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20670426"
+	},
+	"item": [
+		{
+			"name": "Create pets",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juan\",\r\n    \"tag\": \"Fish\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/pets",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"pets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/pets",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"pets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Pet Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/pets/633b96f06d80401170cc32fa",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"pets",
+						"633b96f06d80401170cc32fa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
